@@ -18,7 +18,7 @@ entries:
           url: https://www.jenkins.io/
     apiVersion: v2
     appVersion: 2.361.2
-    created: "2022-10-16T19:17:10.84592+08:00"
+    created: "2022-10-16T19:28:49.327041+08:00"
     description: Jenkins - Build great things at any scale! The leading open source
       automation server, Jenkins provides hundreds of plugins to support building,
       deploying and automating any project.
@@ -47,14 +47,14 @@ entries:
     version: 4.2.9
   jenkins-service-chart:
   - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-10-16T19:17:10.838758+08:00"
+    appVersion: 1.16.1
+    created: "2022-10-16T19:28:49.321581+08:00"
     dependencies:
     - name: jenkins
       repository: https://charts.jenkins.io
       version: 4.2.9
     description: A Helm chart for Kubernetes
-    digest: 8d80418938fb54c762e1cf97f4f5208c169a84b6d5e4c31618c5ab4aea524601
+    digest: 92ac262f660a3ce30ba8f7f0dd308d5b41b116d3e7620e8e0c93cadc8001163d
     name: jenkins-service-chart
     type: application
     urls:
@@ -62,7 +62,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-16T19:17:10.83002+08:00"
+    created: "2022-10-16T19:28:49.303191+08:00"
     dependencies:
     - name: jenkins
       repository: https://charts.jenkins.io
@@ -74,4 +74,4 @@ entries:
     urls:
     - https://doomokun.github.io/jenkins-service-chart/jenkins-service-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-16T19:17:10.81121+08:00"
+generated: "2022-10-16T19:28:49.290273+08:00"
