@@ -30,9 +30,10 @@ $ helm repo index . --url https://doomokun.github.io/jenkins-service-chart
 
 # other Commands
 When index.yaml is changed, Helm repo need to update
-```$ helm repo update #{repo name}```
+```$ helm repo update ${repo name}```
 Show repo values
-```$ helm show values #{repo name}```
+```$ helm show values ${repo name}```
+```$ helm inspect values ${repo name} > /tmp/jenkins.values```
 
 # About this project
 1. In Chart.yaml, added jenkins into dependencies
