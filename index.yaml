@@ -1,0 +1,63 @@
+apiVersion: v1
+entries:
+  jenkins:
+  - annotations:
+      artifacthub.io/images: |
+        - name: jenkins
+          image: jenkins/jenkins:2.361.2-jdk11
+        - name: k8s-sidecar
+          image: kiwigrid/k8s-sidecar:1.15.0
+        - name: inbound-agent
+          image: jenkins/inbound-agent:4.11.2-4
+        - name: backup
+          image: maorfr/kube-tasks:0.2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/jenkinsci/helm-charts/tree/main/charts/jenkins
+        - name: Jenkins
+          url: https://www.jenkins.io/
+    apiVersion: v2
+    appVersion: 2.361.2
+    created: "2022-10-16T18:21:38.465676+08:00"
+    description: Jenkins - Build great things at any scale! The leading open source
+      automation server, Jenkins provides hundreds of plugins to support building,
+      deploying and automating any project.
+    digest: e5eab75cc401abcea054096413d6e6fd88d07b0d55e1b5748a804ab0ddb4bc8c
+    home: https://jenkins.io/
+    icon: https://get.jenkins.io/art/jenkins-logo/logo.svg
+    maintainers:
+    - email: maor.friedman@redhat.com
+      name: maorfr
+    - email: mail@torstenwalter.de
+      name: torstenwalter
+    - email: garridomota@gmail.com
+      name: mogaal
+    - email: wmcdona89@gmail.com
+      name: wmcdona89
+    - email: timjacomb1@gmail.com
+      name: timja
+    name: jenkins
+    sources:
+    - https://github.com/jenkinsci/jenkins
+    - https://github.com/jenkinsci/docker-inbound-agent
+    - https://github.com/maorfr/kube-tasks
+    - https://github.com/jenkinsci/configuration-as-code-plugin
+    urls:
+    - https://github.com/doomokun/jenkins-service-chart.git/charts/jenkins-4.2.9.tgz
+    version: 4.2.9
+  jenkins-service-chart:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-10-16T18:21:38.460498+08:00"
+    dependencies:
+    - name: jenkins
+      repository: https://charts.jenkins.io
+      version: 4.2.9
+    description: A Helm chart for Kubernetes
+    digest: 48aebec07cd4bae379de22753c9326ed2641a95128bacb4206e6d669cbd626fe
+    name: jenkins-service-chart
+    type: application
+    urls:
+    - https://github.com/doomokun/jenkins-service-chart.git/jenkins-service-chart-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-10-16T18:21:38.451599+08:00"

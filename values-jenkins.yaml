@@ -1,0 +1,8 @@
+jenkins: # dependencies specific
+  controller:
+    serviceType: LoadBalancer
+  serviceAccount:
+    create: false
+    name: jenkins-service-account
+  persistence:
+    storageClass: jenkins-persistent-volume
