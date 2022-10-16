@@ -9,10 +9,10 @@ branch: main
 
 
 # How to use
-Install this chart called 'jenkins-service' to namespace 'jenkins-server', use values-jenkins.yaml values
+Install this chart called 'jenkins-service' to namespace 'jenkins-server', use values.yaml values
 ```
 $ kubectl create namespace jenkins-server
-$ helm install jenkins-service -f values-jenkins.yaml -n jenkins-server .
+$ helm install jenkins-service -f values.yaml -n jenkins-server .
 ```
 
 # Package
@@ -38,7 +38,7 @@ Show repo values
 1. In Chart.yaml, added jenkins into dependencies
 2. Get dependencies by Chart.yaml, ```$ helm dep update```
 3. Addtional k8s resources in ./template for jenkins
-4. New jenkins values ./values-jenkins.yaml
+4. Edit jenkins values ./values.yaml，values一定要係values.yaml，唔係就唔識認
 5. 如dependencies要落values，yaml要比dependency name
 
 # Jenkins Repo
