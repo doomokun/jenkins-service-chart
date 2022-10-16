@@ -5,7 +5,7 @@ pages: https://doomokun.github.io/jenkins-service-chart
 
 repo: git@github.com:doomokun/jenkins-service-chart.git
 
-branch: gh-pages
+branch: main
 
 
 # How to use
