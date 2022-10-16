@@ -3,6 +3,7 @@
 # Chart pages
 pages: https://doomokun.github.io/jenkins-service-chart
 repo: git@github.com:doomokun/jenkins-service-chart.git
+branch: gh-pages
 
 # How to use
 Install this chart called 'jenkins-service' to namespace 'jenkins-server', use values-jenkins.yaml values
