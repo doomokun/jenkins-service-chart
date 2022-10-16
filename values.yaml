@@ -6,3 +6,4 @@ jenkins: # dependencies specific
     name: jenkins-service-account
   persistence:
     storageClass: jenkins-persistent-volume
+# global:
