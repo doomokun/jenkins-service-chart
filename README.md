@@ -2,8 +2,11 @@
 
 # Chart pages
 pages: https://doomokun.github.io/jenkins-service-chart
+
 repo: git@github.com:doomokun/jenkins-service-chart.git
+
 branch: gh-pages
+
 
 # How to use
 Install this chart called 'jenkins-service' to namespace 'jenkins-server', use values-jenkins.yaml values
@@ -15,14 +18,14 @@ $ helm install jenkins-service -f values-jenkins.yaml -n jenkins-server .
 # Package
 ```
 $ helm package .
-$ helm repo index . --url https://github.com/doomokun/jenkins-service-chart.git
+$ helm repo index . --url https://doomokun.github.io/jenkins-service-chart
 ```
 
 # Version update
 Update Chart.yaml :version and package
 ```
 $ helm package .
-$ helm repo index . --url https://github.com/doomokun/jenkins-service-chart.git
+$ helm repo index . --url https://doomokun.github.io/jenkins-service-chart
 ```
 
 # About this project
