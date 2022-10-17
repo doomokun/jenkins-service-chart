@@ -35,6 +35,9 @@ Show repo values
 ```$ helm show values ${repo name}```
 ```$ helm inspect values ${repo name} > /tmp/jenkins.values```
 
+# Service account setting
+link (https://jimmysong.io/kubernetes-handbook/concepts/rbac.html)
+
 # About this project
 1. In Chart.yaml, added jenkins into dependencies
 2. Get dependencies by Chart.yaml, ```$ helm dep update```
