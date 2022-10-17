@@ -1,9 +1,9 @@
 jenkins: # dependencies specific
   controller:
     serviceType: LoadBalancer
-  serviceAccount:
-    create: false
-    name: jenkins-service-account
+  # serviceAccount:
+  #   create: false
+  #   name: jenkins-service-account
   # serviceAccountAgent:
   #   name: jenkins-service-account
 # global:
