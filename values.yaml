@@ -4,4 +4,6 @@ jenkins: # dependencies specific
   serviceAccount:
     create: false
     name: jenkins-service-account
+  # serviceAccountAgent:
+  #   name: jenkins-service-account
 # global:
