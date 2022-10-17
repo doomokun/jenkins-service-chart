@@ -1,9 +1,7 @@
 jenkins: # dependencies specific
   controller:
-    serviceType: LoadBalancer
+    serviceType: ClusterIP
   serviceAccount:
     create: false
     name: jenkins-service-account
-  persistence:
-    storageClass: jenkins-persistent-volume
 # global:
