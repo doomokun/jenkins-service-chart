@@ -15,14 +15,8 @@ $ kubectl create namespace jenkins-server
 $ helm install jenkins-service -f values.yaml -n jenkins-server .
 ```
 
-# Package
-```
-$ helm package .
-$ helm repo index . --url https://doomokun.github.io/jenkins-service-chart
-```
-
-# Version update
-Update Chart.yaml :version and package
+# Package or Version update
+Update Chart.yaml :version or Create just run package
 ```
 $ helm package .
 $ helm repo index . --url https://doomokun.github.io/jenkins-service-chart
