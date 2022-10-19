@@ -1,6 +1,7 @@
 jenkins: # dependencies specific
   controller:
-    serviceType: LoadBalancer
+    # serviceType: LoadBalancer
+    serviceType: ClusterIP
   # serviceAccount:
   #   create: false
   #   name: jenkins-service-account
