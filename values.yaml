@@ -6,4 +6,6 @@ jenkins: # dependencies specific
   #   name: jenkins-service-account
   # serviceAccountAgent:
   #   name: jenkins-service-account
-# global:
+global:
+  secret:
+    dockercred: none
