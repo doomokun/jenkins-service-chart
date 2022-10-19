@@ -1,77 +1,18 @@
 apiVersion: v1
 entries:
-  jenkins:
-  - annotations:
-      artifacthub.io/images: |
-        - name: jenkins
-          image: jenkins/jenkins:2.361.2-jdk11
-        - name: k8s-sidecar
-          image: kiwigrid/k8s-sidecar:1.15.0
-        - name: inbound-agent
-          image: jenkins/inbound-agent:4.11.2-4
-        - name: backup
-          image: maorfr/kube-tasks:0.2.0
-      artifacthub.io/links: |
-        - name: Chart Source
-          url: https://github.com/jenkinsci/helm-charts/tree/main/charts/jenkins
-        - name: Jenkins
-          url: https://www.jenkins.io/
-    apiVersion: v2
-    appVersion: 2.361.2
-    created: "2022-10-19T17:34:14.86441+08:00"
-    description: Jenkins - Build great things at any scale! The leading open source
-      automation server, Jenkins provides hundreds of plugins to support building,
-      deploying and automating any project.
-    digest: e5eab75cc401abcea054096413d6e6fd88d07b0d55e1b5748a804ab0ddb4bc8c
-    home: https://jenkins.io/
-    icon: https://get.jenkins.io/art/jenkins-logo/logo.svg
-    maintainers:
-    - email: maor.friedman@redhat.com
-      name: maorfr
-    - email: mail@torstenwalter.de
-      name: torstenwalter
-    - email: garridomota@gmail.com
-      name: mogaal
-    - email: wmcdona89@gmail.com
-      name: wmcdona89
-    - email: timjacomb1@gmail.com
-      name: timja
-    name: jenkins
-    sources:
-    - https://github.com/jenkinsci/jenkins
-    - https://github.com/jenkinsci/docker-inbound-agent
-    - https://github.com/maorfr/kube-tasks
-    - https://github.com/jenkinsci/configuration-as-code-plugin
-    urls:
-    - https://doomokun.github.io/jenkins-service-chart/charts/jenkins-4.2.9.tgz
-    version: 4.2.9
   jenkins-service-chart:
   - apiVersion: v2
-    appVersion: 1.16.15
-    created: "2022-10-19T17:34:14.858647+08:00"
+    appVersion: 1.16.16
+    created: "2022-10-19T17:37:45.798066+08:00"
     dependencies:
     - name: jenkins
       repository: https://charts.jenkins.io
       version: 4.2.9
     description: A Helm chart for Kubernetes
-    digest: 525c55587bfa71e21576666bcd6b42684b92f649ce496b588df7d7eb144286bb
+    digest: 6abffee06483d09ec1d154d5d596d78e81be1cf9b658866d43147d1bc6578f97
     name: jenkins-service-chart
     type: application
     urls:
-    - https://doomokun.github.io/jenkins-service-chart/jenkins-service-chart-0.2.14.tgz
-    version: 0.2.14
-  - apiVersion: v2
-    appVersion: 1.16.14
-    created: "2022-10-19T17:34:14.834464+08:00"
-    dependencies:
-    - name: jenkins
-      repository: https://charts.jenkins.io
-      version: 4.2.9
-    description: A Helm chart for Kubernetes
-    digest: d8151000888e015ca9200900206b8a84c97782c9d99d71d05e778329a095aa5b
-    name: jenkins-service-chart
-    type: application
-    urls:
-    - https://doomokun.github.io/jenkins-service-chart/jenkins-service-chart-0.2.13.tgz
-    version: 0.2.13
-generated: "2022-10-19T17:34:14.806779+08:00"
+    - https://doomokun.github.io/jenkins-service-chart/jenkins-service-chart-0.2.15.tgz
+    version: 0.2.15
+generated: "2022-10-19T17:37:45.788708+08:00"
