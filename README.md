@@ -12,7 +12,8 @@ branch: main
 Install this chart called 'jenkins-service' to namespace 'jenkins-server', use values.yaml values
 ```
 $ kubectl create namespace jenkins-server
-$ helm install jenkins-service -f values.yaml -n jenkins-server .
+$ helm install jenkins-service jenkins-repo/jenkins-service-chart --namespace jenkins-server --set global.secret.dockercred=create --create-namespace # First time need to create secret
+$ helm install jenkins-service jenkins-repo/jenkins-service-chart --namespace jenkins-server --create-namespace
 ```
 
 # Package or Version update
