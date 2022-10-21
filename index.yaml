@@ -2,17 +2,17 @@ apiVersion: v1
 entries:
   jenkins-service-chart:
   - apiVersion: v2
-    appVersion: 1.16.16
-    created: "2022-10-19T17:37:45.798066+08:00"
+    appVersion: 1.16.17
+    created: "2022-10-21T19:53:34.454873+08:00"
     dependencies:
     - name: jenkins
       repository: https://charts.jenkins.io
       version: 4.2.9
     description: A Helm chart for Kubernetes
-    digest: 6abffee06483d09ec1d154d5d596d78e81be1cf9b658866d43147d1bc6578f97
+    digest: 0377222666777d27567c7ec672654969ff57b129fdcff2b03c8263709ee96acc
     name: jenkins-service-chart
     type: application
     urls:
     - https://doomokun.github.io/jenkins-service-chart/jenkins-service-chart-0.2.15.tgz
     version: 0.2.15
-generated: "2022-10-19T17:37:45.788708+08:00"
+generated: "2022-10-21T19:53:34.439799+08:00"
